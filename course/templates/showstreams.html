@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+  {% load static%}
+  <title>All Streams Details</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+</head>
+<body style="background-image:url('{% static 'bookbg2.jpg' %}');   background-size: cover;">
+    <center  style="  color:#050606;   background-color:#34d8e6;   border-radius: 6px;  margin: 0 55px 63px 39px;   text-align: center;">
+<h1>All Strems Details</h1>
+    </center>
+<div class="container">
+<table class="table table-striped" >
+    <thead>
+      <tr  style="background-color:#070b0c; color: #3bc9af; align-items:center ">
+        <th>Stream ID</th>
+		<th>Stream Name</th>
+      </tr>
+    </thead>
+    <tbody>
+	{% for dt in CS %}  
+      <tr  style="background-color:#1c2529bd; color:white; border-radius: 10px;  ">
+        <td>{{dt.s_id}}</td>
+		<td>{{dt.s_name}}</td>
+      </tr>
+	  {% endfor %} 
+	</tbody>
+</table>	
+</div>
+</body>
+</html>

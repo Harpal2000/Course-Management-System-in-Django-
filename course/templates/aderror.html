@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found</title>
+    <link rel="stylesheet" href={% static 'errorstyl.css' %}>
+</head>
+<body>
+        <img   src="{% static '404_error.png' %}" alt="Error!" height="400px" width="400px">
+        <div class="wrapper">
+        <p class="message">Oops!! If you are admin check your username or password</p>
+        <a href="/admin_login" class="btn">Click Here to Login Again</a>
+        <p class="copyRights">&copy; 2022 COURSE MANAGEMENT SYSTEM</p>
+        </div>
+</body>
+</html>

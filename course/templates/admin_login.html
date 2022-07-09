@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    {% load static %}
+    <meta charset="utf-8">
+    <title>Admin Login</title>
+    <link rel="stylesheet" href={% static 'adminstyle.css' %}>
+  </head>
+  <body style="background-image:url('{% static 'bookbg1.jpg' %}');background-size: cover;background-position: center center;">
+    {% comment %} <div class="login__img">
+      <img src="{% static 'adminp.svg' %}" alt=""> {% endcomment %}
+      
+  </div>
+    <div class="center">
+      <h1>Admin Login</h1>
+      <form action="#" method="POST">
+        {% csrf_token %}
+        <div class="txt">
+          <input type="text" class="txt_field" name ='adname'>
+          <span></span>
+          <label>Username</label>
+        </div>
+        <div class="txt">
+          <input type="password" class="txt_field" name ='adpass' >
+          <span></span>
+          <label>Password</label>
+        </div>
+        <input type="submit" value="Login">
+        <div class="note">
+        <h5 style="color:white">*Only admin can access this account</h5>
+        </div>
+      </form>
+    </div>
+
+  </body>
+</html>

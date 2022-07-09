@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  {%load static%}
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+  <link href="{% static 'style.css' %}" rel="stylesheet" />
+
+
+  <!-- slick (j-quey)  theme.min.css  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+  <link rel="stylesheet" href="{% static 'assets.css' %}">
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css" integrity="sha512-xX2rYBFJSj86W54Fyv1de80DWBq7zYLn2z0I9bIhQG+rxIF6XVJUpdGnsNHWRa6AvP89vtFupEPDP8eZAtu9qA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+  <title>Home Page</title>
+</head>
+
+<body  style="background-image:url('{% static 'bookbg1.jpg' %}');background-size: cover;padding:0 0 0 0;background-position: center center;">
+
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="{% static 'logo.png' %}" height="50px" width="100px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Blog</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Courses
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">BTech</a></li>
+              <li><a class="dropdown-item" href="#">BA</a></li>
+              <li><a class="dropdown-item" href="#">LLB</a></li>
+              <li><a class="dropdown-item" href="#">BCom</a></li>
+              <li><a class="dropdown-item" href="#">MBA</a></li>
+
+            </ul>
+          </li>
+
+        </ul>
+      </div>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+        <!--
+            <button class="btn btn-outline-success " type="submit">
+            -->
+        <button class="btn btn-search" type="submit">
+          Search
+        </button>
+      </form>
+    </div>
+    </div>
+  </nav>
+
+  <!-- Container -->
+  <!--
+   ,
+   <div class="dummy">
+     <p>
+       A course management system (CMS) is a collection of software tools providing an online environment for course interactions. A CMS typically includes a variety of online tools and environments
+      </p>
+      <p>
+        The decision to use a CMS in a traditional face-to-face course has implications for course design that often go unnoticed by instructors in their initial use of such systems.
+      </p>
+    </div>
+  -->
+  <div class="Tcourses">
+    <h2>Trending Categories</h2>
+  </div>
+  <div class="cont2">
+    <div class="card1" style="width: 13rem">
+      <img alt="" width="130" height="150"
+        src="https://s.udemycdn.com/home/top-categories/lohp-category-development-v2.jpg"
+        srcset="https://s.udemycdn.com/home/top-categories/lohp-category-development-v2.jpg 1x, https://s.udemycdn.com/home/top-categories/lohp-category-development-2x-v2.jpg 2x">
+      <div class="card-body" style="padding: 1rem 1rem 1rem 5px">
+        <h5 class="card-title" style="text-align: center">Development </h5>
+        <a href="#" class="btn btn-primary" style="display: block; text-align: center">Enroll Now
+        </a>
+      </div>
+    </div>
+
+    <div class="card1" style="width: 13rem">
+      <img alt="" width="130" height="150"
+        src="https://s.udemycdn.com/home/top-categories/lohp-category-it-and-software-v2.jpg"
+        srcset="https://s.udemycdn.com/home/top-categories/lohp-category-it-and-software-v2.jpg 1x, https://s.udemycdn.com/home/top-categories/lohp-category-it-and-software-2x-v2.jpg 2x">
+      <div class="card-body" style="padding: 1rem 1rem 1rem 5px">
+        <h5 class="card-title" style="text-align: center">IT and Software</h5>
+        <a href="#" class="btn btn-primary" style="display: block; text-align: center"> Enroll Now
+        </a>
+      </div>
+    </div>
+    <div class="card1" style="width: 13rem">
+      <img alt="" width="130" height="150"
+        src="https://s.udemycdn.com/home/top-categories/lohp-category-marketing-v2.jpg"
+        srcset="https://s.udemycdn.com/home/top-categories/lohp-category-marketing-v2.jpg 1x, https://s.udemycdn.com/home/top-categories/lohp-category-marketing-2x-v2.jpg 2x">
+      <div class="card-body" style="padding: 1rem 1rem 1rem 5px">
+        <h5 class="card-title" style="text-align: center">Marketing</h5>
+        <a href="#" class="btn btn-primary" style="display: block; text-align: center">Enroll Now
+        </a>
+      </div>
+    </div>
+    <div class="card1" style="width: 13rem">
+      <img alt="" width="130" height="150" src="https://s.udemycdn.com/home/top-categories/lohp-category-design-v2.jpg"
+        srcset="https://s.udemycdn.com/home/top-categories/lohp-category-design-v2.jpg 1x, https://s.udemycdn.com/home/top-categories/lohp-category-design-2x-v2.jpg 2x">
+      <div class="card-body" style="padding: 1rem 1rem 1rem 5px">
+        <h5 class="card-title" style="text-align: center">Design</h5>
+        <a href="#" class="btn btn-primary" style="display: block; text-align: center">Enroll Now
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!--.slider-->
+  <section id="book-sec" class="cse-books">
+    <h2 class="heading">Computer science</h2>
+    <div class="row-cover">
+
+      <div class="row play ">
+        <div class="box">
+          <div class="box-content">
+            <br>
+            <div class="img-box">
+              <img class=" lazyloaded"
+                data-src="https://cdn01.alison-static.net/courses/3084/alison_courseware_intro_3084.jpg" width="264px"
+                height="164px" alt="Free Online Fundamentals of JavaScript Course"
+                title="Free Online Fundamentals of JavaScript Course"
+                src="https://cdn01.alison-static.net/courses/3084/alison_courseware_intro_3084.jpg">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title" style="text-align: center;">JavaScript</h5>
+              <a href="#" class="btn btn-primary" style="display: block; text-align: center">Enroll Now
+              </a>
+            </div>
+            <br><br>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-content">
+            <br>
+            <div class="img-box">
+              <img class=" lazyloaded"
+                data-src="https://cdn01.alison-static.net/courses/2689/alison_courseware_intro_2689.jpg" width="264px"
+                height="164px" alt="Free Online C Programming - Introduction Course"
+                title="Free Online C Programming - Introduction Course"
+                src="https://cdn01.alison-static.net/courses/2689/alison_courseware_intro_2689.jpg">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title" style="text-align: center">C Programming</h5>
+              <a href="https://alison.com/topic/learn/101973/writing-your-first-program-in-c" class="btn btn-primary"
+                style="display: block; text-align: center">Enroll Now
+              </a>
+            </div><br><br>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-content">
+            <br>
+            <div class="img-box">
+              <img class=" lazyloaded"
+                data-src="https://cdn01.alison-static.net/courses/2333/alison_courseware_intro_2333.jpg" width="264px"
+                height="164px" alt="Free Online Machine Learning: Planning and Decision Making Course"
+                title="Free Online Machine Learning: Planning and Decision Making Course"
+                src="https://cdn01.alison-static.net/courses/2333/alison_courseware_intro_2333.jpg">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title" style="text-align: center">Machine Learning</h5>
+              <a href="https://alison.com/topic/learn/93267/planning-and-decision-making-learning-outcomes"
+                class="btn btn-primary" style="display: block; text-align: center">Enroll Now
+              </a>
+            </div> <br><br>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-content">
+            <br>
+            <div class="img-box">
+              <img class=" lazyloaded"
+                data-src="https://cdn01.alison-static.net/courses/1227/alison_courseware_intro_1227.jpg" width="264px"
+                height="164px" alt="Free Online Introduction to C++ Programming Language Course"
+                title="Free Online Introduction to C++ Programming Language Course"
+                src="https://cdn01.alison-static.net/courses/1227/alison_courseware_intro_1227.jpg">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title" style="text-align: center">C++ Basics</h5>
+              <a href="https://alison.com/topic/learn/65430/module-1-learning-outcomes" class="btn btn-primary"
+                style="display: block; text-align: center">Enroll Now
+              </a>
+            </div><br><br>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-content">
+            <br>
+            <div class="img-box">
+              <img class=" lazyloaded"
+                data-src="https://cdn01.alison-static.net/courses/4343/alison_courseware_intro_4343.jpg" width="264px"
+                height="164px" alt="Free Online Introduction to Data Structures Course"
+                title="Free Online Introduction to Data Structures Course"
+                src="https://cdn01.alison-static.net/courses/4343/alison_courseware_intro_4343.jpg">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title" style="text-align: center">Data Structures</h5>
+              <a href="https://alison.com/topic/learn/131925/introduction-to-data-structures-learning-outcomes"
+                class="btn btn-primary" style="display: block; text-align: center">Enroll Now
+              </a>
+            </div><br><br>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-content">
+            <br>
+            <div class="img-box">
+              <img class=" lazyloaded"
+                data-src="https://cdn01.alison-static.net/courses/3052/alison_courseware_intro_3052.jpg" width="264px"
+                height="164px" alt="Free Online Virtual Reality Tracking and Rendering Course"
+                title="Free Online Virtual Reality Tracking and Rendering Course"
+                src="https://cdn01.alison-static.net/courses/3052/alison_courseware_intro_3052.jpg">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title" style="text-align: center">Virtual Reality</h5>
+              <a href="https://alison.com/courses/virtual-reality-tracking-and-rendering/content"
+                class="btn btn-primary" style="display: block; text-align: center">Enroll Now
+              </a>
+            </div><br><br>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section id="book-sec" class="cse-books">
+      <h2 class="heading">Civil Engineering</h2>
+      <div class="row-cover">
+
+        <div class="row play ">
+          <div class="box">
+            <div class="box-content">
+              <br>
+              <div class="img-box">
+                <img class=" lazyloaded"
+                  data-src="https://cdn01.alison-static.net/courses/2981/alison_courseware_intro_2981.jpg" width="264px"
+                  height="164px"
+                  alt="Free Online Understanding Cracking, Electrical and Magnetic Characteristics of Geomechanics Course"
+                  title="Free Online Understanding Cracking, Electrical and Magnetic Characteristics of Geomechanics Course"
+                  src="https://cdn01.alison-static.net/courses/2981/alison_courseware_intro_2981.jpg">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title" style="text-align: center">Cracking</h5>
+                <a href="#" class="btn btn-primary" style="display: block; text-align: center">Enroll Now
+                </a>
+              </div>
+              <br><br>
+            </div>
+          </div>
+          <div class="box">
+            <div class="box-content">
+              <br>
+              <div class="img-box">
+                <img class=" lazyloaded"
+                  data-src="https://cdn01.alison-static.net/courses/3180/alison_courseware_intro_3180.jpg" width="264px"
+                  height="164px" alt="Free Online Understanding the Hydrodynamic Principle in River Engineering Course"
+                  title="Free Online Understanding the Hydrodynamic Principle in River Engineering Course"
+                  src="https://cdn01.alison-static.net/courses/3180/alison_courseware_intro_3180.jpg">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title" style="text-align: center">Hydrodynamics</h5>
+                <a href="#" class="btn btn-primary" style="display: block; text-align: center">Enroll Now
+                </a>
+              </div><br><br>
+            </div>
+          </div>
+          <div class="box">
+            <div class="box-content">
+              <br>
+              <div class="img-box">
+                <img class=" lazyloaded"
+                  data-src="https://cdn01.alison-static.net/courses/3177/alison_courseware_intro_3177.jpg" width="264px"
+                  height="164px" alt="Free Online River Engineering - River Training and Riverbank Stabilization Course"
+                  title="Free Online River Engineering - River Training and Riverbank Stabilization Course"
+                  src="https://cdn01.alison-static.net/courses/3177/alison_courseware_intro_3177.jpg">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title" style="text-align: center">River Engineering</h5>
+                <a href="#" class="btn btn-primary" style="display: block; text-align: center">Enroll Now
+                </a>
+              </div> <br><br>
+            </div>
+          </div>
+          <div class="box">
+            <div class="box-content">
+              <br>
+              <div class="img-box">
+                <img class=" lazyloaded"
+                  data-src="https://cdn01.alison-static.net/courses/2441/alison_courseware_intro_2441.jpg" width="264px"
+                  height="164px" alt="Free Online An Introduction to GIS and Data Models Course"
+                  title="Free Online An Introduction to GIS and Data Models Course"
+                  src="https://cdn01.alison-static.net/courses/2441/alison_courseware_intro_2441.jpg">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title" style="text-align: center">GIS</h5>
+                <a href="#" class="btn btn-primary" style="display: block; text-align: center">Enroll Now
+                </a>
+              </div><br><br>
+            </div>
+          </div>
+          <div class="box">
+            <div class="box-content">
+              <br>
+              <div class="img-box">
+                <img class=" lazyloaded"
+                  data-src="https://cdn01.alison-static.net/courses/3377/alison_courseware_intro_3377.jpg" width="264px"
+                  height="164px" alt="Free Online Basic Properties of Concrete Materials Course"
+                  title="Free Online Basic Properties of Concrete Materials Course"
+                  src="https://cdn01.alison-static.net/courses/3377/alison_courseware_intro_3377.jpg">
+
+              </div>
+              <div class="card-body">
+                <h5 class="card-title" style="text-align: center">Concreate Mtr.</h5>
+                <a href="https://alison.com/topic/learn/116235/learning-outcomes-introduction-to-concrete-materials"
+                  class="btn btn-primary" style="display: block; text-align: center">Enroll Now
+                </a>
+              </div><br><br>
+            </div>
+          </div>
+          <div class="box">
+            <div class="box-content">
+              <br>
+              <div class="img-box">
+                <img class=" lazyloaded"
+                  data-src="https://cdn01.alison-static.net/courses/2238/alison_courseware_intro_2238.jpg" width="264px"
+                  height="164px"
+                  alt="Free Online Diploma in Structural Dynamics for Civil Engineers - SDOF Systems Course"
+                  title="Free Online Diploma in Structural Dynamics for Civil Engineers - SDOF Systems Course"
+                  src="https://cdn01.alison-static.net/courses/2238/alison_courseware_intro_2238.jpg">
+
+              </div>
+              <div class="card-body">
+                <h5 class="card-title" style="text-align: center">Dynamics</h5>
+                <a href="https://alison.com/courses/diploma-in-structural-dynamics-for-civil-engineers-sdof-systems/content#event=login"
+                  class="btn btn-primary" style="display: block; text-align: center">Enroll Now
+                </a>
+              </div><br><br>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section id="book-sec" class="cse-books">
+        <h2 class="heading">BA LLB</h2>
+        <div class="row-cover">
+
+          <div class="row play ">
+            <div class="box">
+              <div class="box-content">
+                <br>
+                <div class="img-box">
+                  <img class=" ls-is-cached lazyloaded"
+                    data-src="https://cdn01.alison-static.net/courses/1971/alison_courseware_intro_1971.jpg"
+                    width="264px" height="164px" alt="Free Online Ethics in Law Enforcement Course"
+                    title="Free Online Ethics in Law Enforcement Course"
+                    src="https://cdn01.alison-static.net/courses/1971/alison_courseware_intro_1971.jpg">
+
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title" style="text-align: center">Law Ethics</h5>
+                  <a href="https://alison.com/topic/learn/84537/ethical-behaviour-learning-outcomes"
+                    class="btn btn-primary" style="display: block; text-align: center">Enroll Now
+                  </a>
+                </div>
+                <br><br>
+              </div>
+            </div>
+            <div class="box">
+              <div class="box-content">
+                <br>
+                <div class="img-box">
+                  <img class=" ls-is-cached lazyloaded"
+                    data-src="https://cdn01.alison-static.net/courses/1698/alison_courseware_intro_1698.jpg"
+                    width="264px" height="164px" alt="Free Online Fundamentals of Business Law - Revised Course"
+                    title="Free Online Fundamentals of Business Law - Revised Course"
+                    src="https://cdn01.alison-static.net/courses/1698/alison_courseware_intro_1698.jpg">
+
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title" style="text-align: center">Business Laws</h5>
+                  <a href="https://alison.com/topic/learn/77588/introduction-to-business-law-learning-outcomes"
+                    class="btn btn-primary" style="display: block; text-align: center">Enroll Now
+                  </a>
+                </div><br><br>
+              </div>
+            </div>
+            <div class="box">
+              <div class="box-content">
+                <br>
+                <div class="img-box">
+                  <img class=" lazyloaded"
+                    data-src="https://cdn01.alison-static.net/courses/3191/alison_courseware_intro_3191.jpg"
+                    width="264px" height="164px"
+                    alt="Free Online Diploma in International Convention and Maritime Law Course"
+                    title="Free Online Diploma in International Convention and Maritime Law Course"
+                    src="https://cdn01.alison-static.net/courses/3191/alison_courseware_intro_3191.jpg">
+
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title" style="text-align: center">Convention Law</h5>
+                  <a href="#" class="btn btn-primary" style="display: block; text-align: center">Enroll Now
+                  </a>
+                </div> <br><br>
+              </div>
+            </div>
+            <div class="box">
+              <div class="box-content">
+                <br>
+                <div class="img-box">
+                  <img class=" lazyloaded"
+                    data-src="https://cdn01.alison-static.net/courses/1701/alison_courseware_intro_1701.jpg"
+                    width="264px" height="164px" alt="Free Online Employer - Employee Law - Revised Course"
+                    title="Free Online Employer - Employee Law - Revised Course"
+                    src="https://cdn01.alison-static.net/courses/1701/alison_courseware_intro_1701.jpg">
+
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title" style="text-align: center">Employee Law</h5>
+                  <a href="https://alison.com/topic/learn/77611/introduction-to-the-law-of-agency-learning-outcomes"
+                    class="btn btn-primary" style="display: block; text-align: center">Enroll Now
+                  </a>
+                </div><br><br>
+              </div>
+            </div>
+            <div class="box">
+              <div class="box-content">
+                <br>
+                <div class="img-box">
+                  <img class=" lazyloaded"
+                    data-src="https://cdn01.alison-static.net/courses/2193/alison_courseware_intro_2193.jpg"
+                    width="264px" height="164px"
+                    alt="Free Online Intellectual Property Rights and Anti-Trust Law Course"
+                    title="Free Online Intellectual Property Rights and Anti-Trust Law Course"
+                    src="https://cdn01.alison-static.net/courses/2193/alison_courseware_intro_2193.jpg">
+
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title" style="text-align: center">Property Law</h5>
+                  <a href="https://alison.com/topic/learn/89470/relationship-between-intellectual-property-rights-and-competition-law-learning-ouctomes"
+                    class="btn btn-primary" style="display: block; text-align: center">Enroll Now
+                  </a>
+                </div><br><br>
+              </div>
+            </div>
+            <div class="box">
+              <div class="box-content">
+                <br>
+                <div class="img-box">
+                  <img class=" lazyloaded"
+                    data-src="https://cdn01.alison-static.net/courses/1700/alison_courseware_intro_1700.jpg"
+                    width="264px" height="164px" alt="Free Online Introduction to Contracts in Law - Revised Course"
+                    title="Free Online Introduction to Contracts in Law - Revised Course"
+                    src="https://cdn01.alison-static.net/courses/1700/alison_courseware_intro_1700.jpg">
+
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title" style="text-align: center">Contract Law</h5>
+                  <a href="https://alison.com/topic/learn/77604/introduction-to-contracts-learning-outcomes"
+                    class="btn btn-primary" style="display: block; text-align: center">Enroll Now
+                  </a>
+                </div><br><br>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <!--  footer -->
+        <!--   
+    <div class="footer-basic">
+      <footer>
+          <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+          <ul class="list-inline">
+              <li class="list-inline-item"><a href="#">Home</a></li>
+              <li class="list-inline-item"><a href="#">Services</a></li>
+              <li class="list-inline-item"><a href="#">About</a></li>
+              <li class="list-inline-item"><a href="#">Terms</a></li>
+              <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+          </ul>
+          <p class="copyright">Company Name © 2022</p>
+      </footer>
+  </div> -->
+
+
+        <footer class="bg-dark text-center text-white" style="margin-top: 5rem">
+          <!-- Grid container -->
+          <div class="container p-4 pb-0">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+              <!-- Facebook -->
+              <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                  class="fab fa-facebook-f"></i></a>
+
+              <!-- Twitter -->
+              <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                  class="fab fa-twitter"></i></a>
+
+              <!-- Google -->
+              <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                  class="fab fa-google"></i></a>
+
+              <!-- Instagram -->
+              <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i
+                  class="fab fa-instagram"></i></a>
+
+              <!-- Linkedin -->
+              <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i
+                  class="fab fa-linkedin-in"></i></a>
+
+              <!-- Github -->
+              <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                  class="fab fa-github"></i></a>
+            </section>
+            <!-- Section: Social media -->
+          </div>
+          <!-- Grid container -->
+
+          <!-- Copyright -->
+          <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2022 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/">CMSProject.com</a>
+          </div>
+          <!-- Copyright -->
+        </footer>
+
+        <!-- Optional JavaS2cript; choose one of the two! -->
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <!--<script src="https://cdn.lordicon.com/lusqsztk.js"></script> -->
+
+        <!-- Option 2: Separate Popper and Bootstrap JS -->
+        <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+            
+              FOOTER cdn
+  -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script
+          src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+        <!--jquery cdn -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+          integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script type="text/javascript">
+          $('.play').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            autoplaySpeed: 1500,
+          });
+
+
+        </script>
+
+</body>
+
+</html>

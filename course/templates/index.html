@@ -1,0 +1,44 @@
+<html>
+<title>
+    Course Management System
+</title>
+{% load static %}
+<head> 
+    <link rel="stylesheet" href="{% static 'mpage.css' %}">
+</head>
+
+<body id='bg' style="background-image:url('{% static 'bookbg1.jpg' %}');background-size: cover; background-position: center center;">
+
+
+    <div class="wrapper">
+
+
+        {% comment %} <span class="w">
+            <img   src="{% static 'welcome5.png' %}" alt="Welcome">
+        </sapn>   {% endcomment %}
+
+        <img src="{% static 'logo.png' %}" style="float:left;height: 41px; width: 134px; padding-left: 20px;margin-right: 30rem;margin-top:2rem">
+
+        <ul class="nav-area">
+            
+        <li><a href="/admin_login"> Admin  Login</a></li>
+        </ul>
+        </div>
+        <div class="welcome-text">
+                <h1>COURSE MANAGEMENT SYSTEM</h1> 
+        <a href="/login">Login / Register</a>
+            </div>
+            <div class="f">
+                <img   src="{% static 'f-img2.svg' %}" alt="Book">
+                </div>
+    
+
+
+
+        <script src="https://kit.fontawesome.com/f39241e0dc.js" crossorigin="anonymous"></script>
+ 
+
+</body>
+</html>
+
+

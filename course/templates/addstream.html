@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% load static %}
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Add Streams</title>
+	<link rel="stylesheet" href="{% static 'addstream.css' %}">
+</head>
+
+
+<body class="bgc" style="background-image:url('{% static 'bookbg2.jpg' %}');background-size: cover;">
+
+
+
+    <div class="wrapper2">
+
+        <div class="title1">
+          Add Your Stream Here
+        </div>
+        <form method="POST" class="frm1">
+          {%csrf_token %}
+           <div class="inputfield1">
+              <label>Stream ID</label>
+              <input type="text" class="input1" name="st">
+           </div>  
+            <div class="inputfield1">
+              <label>Stream Name</label>
+              <input type="text" class="input1" name="co">
+           </div>  
+          <div class="inputfield1">
+            <button class="btn">Add</button>
+          </div>
+        </form>
+      </div>
+
+
+      <span>
+
+        <div class="wrap">
+        
+         <div class="inputfield1">
+            <button class = "btn" type="submit" >
+                <a href="/dels" style="text-decoration: none; color: white"> Delete Streams </a>
+            </button>
+          </div>
+        {% comment %} 
+          <div class="wrap2"> {% endcomment %}
+          <div class="inputfield2">
+            <button class = "btn" type="submit" >
+                <a href="/showstreams" style="text-decoration: none; color: white">All Stream Details</a>
+            </button>
+        </div>
+        
+        </div>
+        </span>
+
+</body>
+</html>

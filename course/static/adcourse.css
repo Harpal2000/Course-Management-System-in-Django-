@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&family=Raleway:ital,wght@0,300;1,300&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+  /* font-family: 'Montserrat', sans-serif; */
+  background: transparent;
+}
+
+
+.frm{
+  /* background: #fec107; */
+  padding: 49px 76px;
+  margin: 0px 0rem 0 0;
+}
+
+body h1{
+  color: #133079;
+}
+.bgc{
+    /* height: 100vh; */
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: relative;
+}
+.wrapper{
+  max-width: 790px;
+    width: 60%;
+    background: #1c2529bd;
+    margin: 61px 0 0px 22rem;
+    /* box-shadow: 7px 7px 1px rgb(78 143 171 / 54%); */
+    padding: 23px;
+    border-radius: 1rem;
+    border: 1px solid;
+    color: white;
+}
+
+.wrapper .title{
+  font-size: 37px;
+  font-weight: 700;
+  margin-bottom: 0px;
+  margin-top: 20px;
+  color: #2691d9;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  font-family: 'Raleway', sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.wrapper  .inputfield{
+  margin-bottom: 13px;
+  display: flex;
+  align-items: center;
+}
+
+
+.wrapper .inputfield label{
+  width: 200px;
+  color: #2691d9;
+  font-weight: 400;
+  margin-right: 10px;
+ font-size: 22px;
+ font-family: 'Quicksand', sans-serif;
+  font-family: 'Raleway', sans-serif;
+}
+
+.wrapper  .inputfield .input,
+.wrapper .inputfield .textarea{
+  width: 100%;
+  outline: none;
+  border: 1px solid #d5dbd9;
+  font-size: 15px;
+  padding: 8px 10px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+  color:white;
+}
+
+.wrapper .inputfield .textarea{
+  width: 100%;
+  height: 125px;
+  resize: none;
+}
+.wrapper .inputfield .btn{
+  width: 100%;
+    padding: 8px 10px;
+   font-size: 15px; 
+   border: 0px;
+   /* background:  #030352; */
+   background-image :linear-gradient(to right, rgb(62, 125, 154), rgb(61, 66, 89), rgb(75, 89, 169));
+   color: #fff;
+   cursor: pointer;
+   border-radius: 3px;
+   outline: none;
+   margin: 19px 0 0 0
+}
+
+.wrapper .inputfield .btn:hover{
+  background-image :linear-gradient(to right, rgb(78, 129, 144), rgb(29, 41, 101), rgb(113, 134, 255));
+}
+@media (max-width:420px) {
+  .wrapper .inputfield{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .wrapper .inputfield label{
+    margin-bottom: 5px;
+  }
+}
+/* ==============================================================buttons */
+
+
+
+.wrap1  .inputfield3{
+  margin-bottom: 37px;
+  display: flex;
+  align-items: center;
+  width: 28rem;
+  background: #1c2529bd;
+  height: 5rem;
+  margin-top: 5rem;
+  margin-left: 11rem;
+  border-radius: 9px;
+  border: 1px solid;
+  color: white;
+}
+
+.wrap1  .inputfield4{
+  margin-bottom: 37px;
+    display: flex;
+    align-items: center;
+    width: 28rem;
+    background: #1c2529bd;
+    height: 5rem;
+    margin-top: -7rem;
+    margin-left: 55rem;
+    border-radius: 9px;
+    border: 1px solid;
+  color: white;
+}
+
+
+.wrap1 .inputfield3 label{
+   width: 200px;
+   color: #040924;
+   margin-right: 10px;
+  font-size: 22px;
+}
+
+
+.wrap1 .inputfield4 label{
+   width: 200px;
+   color: #040924;
+   margin-right: 10px;
+  font-size: 22px;
+}
+
+
+.wrap1 .inputfield3 .btn{
+  width: 86%;
+  padding: 10px 10px;
+  font-size: 15px;
+  border: 0px;
+  /* background: #030352; */
+  background-image :linear-gradient(to right, rgb(62, 125, 154), rgb(61, 66, 89), rgb(75, 89, 169));
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  outline: none;
+  margin: 0px 0 0 30px;
+}
+.wrap1 .inputfield4 .btn{
+  width: 86%;
+  padding: 10px 10px;
+  font-size: 15px;
+  border: 0px;
+  /* background: #030352; */
+  background-image :linear-gradient(to right, rgb(62, 125, 154), rgb(61, 66, 89), rgb(75, 89, 169));
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  outline: none;
+  margin: 0px 0 0 30px;
+}
+
+.wrap1 .inputfield3 .btn:hover{
+  background-image :linear-gradient(to right, rgb(78, 129, 144), rgb(29, 41, 101), rgb(113, 134, 255));
+
+}
+@media (max-width:420px) {
+  .wra1 .inputfield3{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .wrap1 .inputfield3 label{
+    margin-bottom: 5px;
+  }
+}
+
+
+.wrap1 .inputfield4 .btn:hover{
+  background-image :linear-gradient(to right, rgb(78, 129, 144), rgb(29, 41, 101), rgb(113, 134, 255));
+
+}
+@media (max-width:420px) {
+  .wrap1 .inputfield4{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .wrap1 .inputfield4 label{
+    margin-bottom: 5px;
+  }
+}
+
+
+

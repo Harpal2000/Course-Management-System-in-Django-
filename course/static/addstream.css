@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&family=Raleway:ital,wght@0,300;1,300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    /* font-family: 'Montserrat', sans-serif; */
+    background: transparent;
+  }
+
+  .frm1{
+    /* background: #fec107; */
+    padding: 49px 76px;
+    margin: 0px 0rem 0 0;
+  }
+  body h1{
+      color: #2691d9;
+  }
+
+  .bgc{
+    /* height: 100vh; */
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: relative;
+}
+/* ====================================================================== */
+
+
+.wrap  .inputfield1{
+  margin-bottom: 37px;
+  display: flex;
+  align-items: center;
+  width: 28rem;
+  background: #1c2529bd;
+  height: 5rem;
+  margin-top: 5rem;
+  margin-left: 11rem;
+  border-radius: 9px;
+  border: 1px solid;
+  color: white;
+}
+.wrap  .inputfield1 .btn a{
+  text-decoration: none;
+  color: white;
+}
+
+
+/*  second button top */
+
+.wrap  .inputfield2{
+  margin-bottom: 37px;
+    display: flex;
+    align-items: center;
+    width: 28rem;
+    background: #1c2529bd;
+    height: 5rem;
+    margin-top: -7rem;
+    margin-left: 55rem;
+    border-radius: 9px;
+    border: 1px solid;
+  color: white;
+}
+.wrap  .inputfield2 .btn a{
+  text-decoration: none;
+  color: white;
+}
+
+
+/* ======================================================================= */
+
+
+/* =========================================== */
+.wrapper2{
+    max-width: 790px;
+    width: 60%;
+    background: #1c2529bd;
+    margin: 61px 0 0px 22rem;
+    /* box-shadow: 7px 7px 1px rgb(78 143 171 / 54%); */
+    padding: 23px;
+    border-radius: 1rem;
+    border: 1px solid;
+    color: white;
+  }
+  
+  .wrapper2 .title1{
+    font-size: 37px;
+    font-weight: 700;
+    margin-bottom: 0px;
+    margin-top: 20px;
+    color: #2691d9;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  .wrapper2 {
+    width: 100%;
+  }
+  
+  .wrapper2  .inputfield1{
+    margin-bottom: 26px;
+    display: flex;
+    align-items: center;
+  }
+  .wrapper2  .inputfield1 .btn a{
+    text-decoration: none;
+    color: white;
+  }
+  /* ====================================================== */
+  /* =================================================== */
+.wrapper2 .inputfield1 label{
+    width: 200px;
+    color: #2691d9;
+    margin-right: 10px;
+   font-size: 22px;
+   font-family: 'Quicksand', sans-serif;
+    font-family: 'Raleway', sans-serif;
+ }
+ 
+ .wrapper2  .inputfield1 .input1,
+ .wrapper2 .inputfield1 .textarea{
+   width: 100%;
+   outline: none;
+   border: 1px solid #d5dbd9;
+   font-size: 15px;
+   padding: 8px 10px;
+   border-radius: 3px;
+   transition: all 0.3s ease;
+   color:white;
+ }
+ 
+ .wrapper2 .inputfield1 .textarea{
+   width: 100%;
+   height: 125px;
+   resize: none;
+ }
+ .wrapper2 .inputfield1 .btn{
+   width: 100%;
+    padding: 8px 10px;
+   font-size: 15px; 
+   border: 0px;
+   /* background:  #030352; */
+   background-image :linear-gradient(to right, rgb(62, 125, 154), rgb(61, 66, 89), rgb(75, 89, 169));
+   color: #fff;
+   cursor: pointer;
+   border-radius: 3px;
+   outline: none;
+   margin: 19px 0 0 0
+   
+ }
+
+ .wrapper2 .inputfield1 .btn:hover{
+   /* background: #3b17cbeb; */
+   background-image :linear-gradient(to right, rgb(78, 129, 144), rgb(29, 41, 101), rgb(113, 134, 255));
+   
+ }
+ @media (max-width:420px) {
+   .wrapper2 .inputfield1{
+     flex-direction: column;
+     align-items: flex-start;
+   }
+   .wrapper2 .inputfield1 label{
+     margin-bottom: 5px;
+   }
+ }
+
+
+
+/* ========================================================== */
+
+
+.wrap .inputfield1 .btn{
+  width: 86%;
+  padding: 10px 10px;
+  font-size: 15px;
+  border: 0px;
+  /* background: #030352; */
+  background-image :linear-gradient(to right, rgb(62, 125, 154), rgb(61, 66, 89), rgb(75, 89, 169));
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  outline: none;
+  margin: 0px 0 0 30px;
+}
+
+.wrap .inputfield1 .btn:hover{
+ /* background: #3b17cbeb; */
+ background-image :linear-gradient(to right, rgb(78, 129, 144), rgb(29, 41, 101), rgb(113, 134, 255));
+}
+@media (max-width:420px) {
+ .wrap .inputfield1{
+   flex-direction: column;
+   align-items: flex-start;
+ }
+ .wrap .inputfield1 label{
+   margin-bottom: 5px;
+ }
+}
+/*    second button top  */
+
+
+
+.wrap .inputfield2 .btn{
+  width: 86%;
+  padding: 10px 10px;
+  font-size: 15px;
+  border: 0px;
+  /* background: #030352; */
+  background-image :linear-gradient(to right, rgb(62, 125, 154), rgb(61, 66, 89), rgb(75, 89, 169));
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  outline: none;
+  margin: 0px 0 0 30px;
+ }
+ 
+ .wrap .inputfield2 .btn:hover{
+  /* background: #3b17cbeb; */
+  background-image :linear-gradient(to right, rgb(78, 129, 144), rgb(29, 41, 101), rgb(113, 134, 255));
+ }
+ @media (max-width:420px) {
+  .wrap .inputfield2{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .wrap .inputfield2 label{
+    margin-bottom: 5px;
+  }
+ }
+
+
+ 

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {%load static%}
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Update Courses</title>
+	<link rel="stylesheet" href="{% static 'adcourse.css' %}">
+</head>
+<body class="bgc" style="background-image:url('{% static 'bookbg2.jpg' %}');background-size: cover;background-position: center center;">
+<div class="wrapper">
+    <div class="title">
+      Add Your courses Here
+    </div>
+    <form method="POST" class="frm">
+      {%csrf_token %}
+ 
+        <div class="inputfield">
+          <label>Course Id</label>
+          <input type="text" class="input" name="C_id" required>
+       </div>  
+       <div class="inputfield">
+          <label>Course Name</label>
+          <input type="text" class="input" name="C_name" required>
+       </div>  
+      <div class="inputfield">
+          <label>Stream Name</label>
+          <input type="text" class="input" name="S_name" required>
+       </div> 
+       
+      <div class="inputfield">
+        <button class="btn">UPDATE</button>
+      </div>
+    </form>
+  </div>
+
+
+  <div class="wrap1">
+
+    <div class="inputfield3">
+      <button class = "btn" type="submit" >
+          <a href="/delc" style="text-decoration: none; color: white"> Delete Courses </a>
+      </button>
+    </div>
+    <div class="inputfield4">
+      <button class = "btn" type="submit" >
+          <a href="/showdata" style="text-decoration: none; color: white">All Course Details</a>
+      </button>
+    </div>
+
+    </div>
+
+
+</body>
+</html>

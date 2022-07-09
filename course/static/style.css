@@ -1,0 +1,167 @@
+body {
+    background-image: url('images/IMG-20220514-WA0023.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+.nav-item {
+    font-size: 20px;
+}
+
+.navbar {
+    height: 70px;
+}
+
+.navbar-brand {
+    font-size: 40px;
+}
+
+.navbar-nav {
+    padding-left: 50px;
+}
+
+.nav-item {
+    padding: 10px;
+}
+
+.btn {
+    color: rgb(255, 255, 255);
+    background-color: #000000;
+    border-color: rgba(255, 255, 255, 0.752);
+}
+
+.btn:hover {
+    background-color: rgb(255, 255, 255);
+    border: 2px solid #6d6f7b6f;
+    color: rgb(0, 0, 0);
+}
+
+.btn-search {
+    color: black;
+    background: white;
+}
+
+.btn-search:hover {
+    color: white;
+    background: rgba(0, 0, 0, 0.145);
+}
+
+.card-body h5 {
+    padding-bottom: 10px;
+}
+
+.Tcourses {
+    color: white;
+    font-weight: 100;
+    text-align: center;
+    /* padding-top: 10px; */
+    padding-bottom: 0px;
+}
+
+.Tcourses h2 {
+ 
+    /* background: #000; */
+    margin-bottom: 3rem;
+    font-size: 40px;
+}
+
+.cont2 {
+
+    display: flex;
+    padding-left: 8%;
+    text-align: center;
+    /* background: #000; */
+    height: 100%;
+}
+
+.cont2 .card1 {
+    align-items: center;
+    padding-left: 10px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    /* margin: 50px; */
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 10px;
+    /* padding-bottom: 10px; */
+}
+  
+
+.cont2 .card1 img {
+    display: block;
+    margin-left: 42px;
+    margin-right: 1rem;
+    width: 50%;
+    height: 100px;
+    margin-bottom: 0rem;
+    margin-top: 14px;
+ 
+}
+.heading{
+    margin-top: 9px;
+    padding: 0px;
+}
+.row-cover {
+    padding-left: 257px;
+    width: 85%;
+
+    /* margin: 0; */
+}
+
+.card-body .card-title {
+    color: black;
+}
+
+.row-cover .box-content{
+    background-color: rgba(255, 255, 255, 0.1);
+    /* background: #000; */
+    height: 100%;
+    padding: 0px;
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+}
+.row-cover .box-content img {
+    /* object-fit: fill; */
+    margin: 0px;
+     /* width: 80%; */
+    height: 40%;
+    width: 80%;
+    /* padding-left: 20px; */
+    display: block;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row-cover .box-content h5 {
+    color: black;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.454);
+}
+
+.row-cover .box-content .btn {
+    align-content: center;
+    padding-left: 20px;
+}
+
+.row-cover .box-content .card-title {
+    color: white;
+}
+/* 
+.row-cover .box-content img {
+    border-radius: 10px;
+    padding: 20px;
+} */
+
+.heading {
+    color: white;
+    background: rgba(0, 0, 0, 0.623);
+    height: 50px;
+    text-align: center;
+}
+
+.heading .tx {
+    padding-left: 120px;
+}

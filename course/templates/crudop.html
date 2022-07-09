@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {%load static%}
+    <meta charset="UTF-8" />
+    <title>Crud Operations</title>
+    <link rel="stylesheet" href="{% static 'crudcss.css' %}" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+  </head>
+  <body style="background-image:url('{% static 'crud-bg.png' %}');  background-repeat: no-repeat;background-size: 1365px 1200px;">
+    <h1 style="position: absolute;top: 0;left: 0;right: 0;background: white;text-align: center;">
+       <img src="{% static 'c-logo.jpg' %}" style="float:left;height: 30px; width: 120px; padding-left: 20px;">
+      Manage Your Courses
+        <a href="">
+          <img src="{% static 'insta.png' %}" alt="">
+        </a>
+        <a href="">
+          <img src="{% static 'linkdln.png' %}" alt="">
+        </a>
+        <a href="">
+          <img src="{% static 'reddit.png' %}" alt="">
+        </a>
+        
+      
+    </h1>
+    <div class="book">
+      <input type="checkbox" id="c1" />
+      <input type="checkbox" id="c2" />
+      <input type="checkbox" id="c3" />
+      <input type="checkbox" id="c4" />
+
+      <div id="cover">
+        <!-- <img src="1.jpg" /> -->
+        <lord-icon src="https://cdn.lordicon.com/sygggnra.json" trigger="loop" style="width: 250px; height: 250px">
+        </lord-icon>
+      </div>
+      <div class="flip-book">
+        <div class="flip" id="p1">
+          <div class="back">
+            <lord-icon src="https://cdn.lordicon.com/diyeocup.json" trigger="loop" state="hover-1"
+            style="width: 250px; height: 250px">
+        </lord-icon>
+
+            <label class="back-btn" for="c1">Back</label>
+          </div>
+          <div class="front">
+            <h2 style="font-size:1.8rem">Add Courses/Streams</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur,
+              aliquid.
+              <!-- bootstrap drop -->
+            </p>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Add
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="/addstream">Add Stream</a></li>
+                <li><a class="dropdown-item" href="/addcourse">Add Course</a></li>
+
+              </ul>
+            </div>
+
+            <label class="next-btn" for="c1">Next</label>
+          </div>
+        </div>
+        <div class="flip" id="p2">
+          <div class="back">
+            <!-- <img src="3.jpg" /> -->
+            <lord-icon src="https://cdn.lordicon.com/dovoajyj.json" trigger="loop" style="width: 250px; height: 250px">
+            
+            </lord-icon>
+
+
+            <label class="back-btn" for="c2">Back</label>
+          </div>
+          <div class="front">
+            <h2 style="font-size:1.8rem">Update Courses/Streams</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Veritatis, quidem.
+            </p>
+
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Update
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="/updatec">Update Course</a></li>
+                <li><a class="dropdown-item" href="/updates">Update Stream</a></li>
+
+              </ul>
+            </div>
+
+            <label class="next-btn" for="c2">Next</label>
+          </div>
+        </div>
+
+        <div class="flip" id="p3">
+          <div class="back">
+            <lord-icon src="https://cdn.lordicon.com/stxtcyyo.json" trigger="loop" style="width:250px;height:250px">
+           
+            </lord-icon>
+            <label class="back-btn" for="c3">Back</label>
+          </div>
+          <div class="front">
+            <h2 style="font-size:1.8rem">Delete Courses/Streams</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reprehenderit, vel.
+            </p>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Delete
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="/delc">Delete Course</a></li>
+                <li><a class="dropdown-item" href="/dels">Delete Stream</a></li>
+              </ul>
+            </div>
+
+            <input type="checkbox" name="" id="" name="dropdown" />
+
+            <label class="next-btn" for="c3">Next</label>
+
+          </div>
+        </div>
+
+        <div class="flip" id="p4">
+          <div class="back">
+
+            <label class="back-btn" for="c4">Back</label>
+          </div>
+          <div class="front">
+            <h2>Show all details</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reprehenderit, vel.
+            </p>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Show
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="/showstreams">Show Course Details</a></li>
+                <li><a class="dropdown-item" href="/showdata">Show Stream Details</a></li>
+                <li><a class="dropdown-item" href="/showuserd">show User Details</a></li>
+
+              </ul>
+            </div>
+
+            <input type="checkbox" name="" id="" name="dropdown" />
+
+            <label class="next-btn" for="c4">Next</label>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+    </div>
+    <footer class="bg-danger text-center text-lg-start " >
+      <!-- Grid container -->
+   
+      <!-- Grid container -->
+    
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgb(0, 0, 0); color: aliceblue;">
+        <b>© 2020 Copyright:</b>
+        <a class="text-light" href="#">CMS.com Harpal/Inderpal</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+  </body>
+</html>

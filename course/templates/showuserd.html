@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+  {% load static %}
+  <title>show user details</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+</head>
+<body style="background-image:url('{% static 'bookbg2.jpg' %}');background-size: cover;background-position: center center;">
+    <center style="  color:#050606;   background-color:#34d8e6;   border-radius: 6px;  margin: 0 55px 63px 39px;   text-align: center;" >
+        <h1>All User Details</h1>
+            </center>
+<div class="container">
+<table class="table table-striped" >
+    <thead>
+      <tr style="background-color:#070b0c; color: #3bc9af; align-items:center ">
+        <th>User Name</th>
+		<th>User E-Mail</th>
+		<th>User Password</th>
+      </tr>
+    </thead>
+    <tbody>
+	{% for dt in UDT %}  
+      <tr style="background-color:#1c2529bd; color:white; border-radius: 10px;  ">
+        <td>{{dt.user_name}}</td>
+		<td>{{dt.user_email}}</td>
+		<td>{{dt.user_psswd}}</td>
+      </tr>
+	  {% endfor %} 
+	</tbody>
+</table>	
+</div>
+</body>
+</html>
